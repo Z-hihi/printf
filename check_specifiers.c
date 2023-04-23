@@ -14,9 +14,8 @@ int (*check_specifier(const char *format))(va_list)
 		{"s", print_str},
 		{"%", print_cent},
 		{"d", print_dec},
-		{"i", print_int};
-		{NULL, NULL}
-	};
+		{"i", print_int},
+		{NULL, NULL}};
 	for (i = 0; my_array[i].t != NULL; i++)
 	{
 		if (*(my_array[i].t) == *format)

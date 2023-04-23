@@ -12,7 +12,7 @@ int print_dec(va_list args)
 	numb = va_arg(args, int);
 	while (numb != 0)
 	{
-		my_arr[i] = numn % 10;
+		my_arr[i] = numb % 10;
 		numb /= 10;
 		if (numb == 0)
 		{
@@ -21,10 +21,11 @@ int print_dec(va_list args)
 		else
 			i++;
 	}
-	for (i; i >= 0; i--)
+	while (i >= 0)
 	{
 		x[0] = ('0' + my_arr[i]);
 		count += write(1, x, 1);
+		i--;
 	}
 	return (count);
 }
