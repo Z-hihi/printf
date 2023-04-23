@@ -23,3 +23,4 @@ int main(void)
 	li += _printf("negative decimal %i\n", -10);
 	_printf("there is %d character in the previous sentence", li);
 	return (0);
+}
