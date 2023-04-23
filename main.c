@@ -20,7 +20,7 @@ int main(void)
 	_printf("there is %d character in the previous sentence\n", count_cent);
 	len += _printf("the number is: %d", 123);
 	_printf("there is %d character in the previous sentence\n", len);
-	li += _printf("negative decimal", -10);
+	li += _printf("negative decimal %i\n", -10);
 	_printf("there is %d character in the previous sentence", li);
 	return (0);
 }
