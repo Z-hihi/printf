@@ -6,7 +6,9 @@
  */
 int print_cent(va_list args)
 {
+	char c ;
 	(void)args;
 
-	return (write(1, "%", 1));
+	c = '%';
+	return (write(1, &c, 1));
 }

@@ -16,7 +16,7 @@ int main(void)
 	write(1, "STANDARD:\n", 10);
 	count_hmd = _printf("The first letter of my name is: %c", 'Y');
 	 _printf("there is %d character in the previous sentence\n", count_hmd);
-	count_cent = _printf("100%\n");
+	count_cent = _printf("100%%\n");
 	_printf("there is %d character in the previous sentence\n", count_cent);
 	return (0);
 }
