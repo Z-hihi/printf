@@ -8,10 +8,14 @@
  */
 int main(void)
 {
+	int count_std = 0, count_hmd = 0;
+
 	write(1, "STANDARD:\n", 10);
-	_printf("My favorite color is %s\n", "blue");
+	count_std = _printf("My favorite color is %s\n", "blue");
+	_printf("there is %d character in the previous sentence", count_std);
 	write(1, "STANDARD:\n", 10);
-	_printf("The first letter of my name is: %c", 'Y');
+	count_hmd = _printf("The first letter of my name is: %c", 'Y');
+	 _printf("there is %d character in the previous sentence", count_hmd);
 	_printf("100%");
 
 	return (0);
