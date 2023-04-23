@@ -19,13 +19,15 @@ int print_int(va_list args)
 		my_arr[i] = (numb % 10);
 		numb = numb / 10;
 		if (numb == 0)
+		{
 			break;
-			i++;
+		}
 	}
-	for (i; i >= 0; i--)
+	while (i >= 0)
 	{
 		x[0] = ('0' + my_arr[i]);
 		count += write(1, x, 1);
+		i--;
 	}
 	return (count);
 }
