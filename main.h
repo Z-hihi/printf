@@ -31,4 +31,11 @@ void write_base(char *str);
 unsigned int base_len(unsigned int num, int base);
 char *_memcpy(char *dest, char *src, unsigned int n);
 char *rev_string(char *s);
+int print_octal(va_list list);
+int print_hex(va_list list);
+int print_heX(va_list list);
+int hex_check(int num, char x);
+
+
+
 #endif
