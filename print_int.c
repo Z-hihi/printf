@@ -8,27 +8,26 @@
 
 int print_int(va_list args)
 {
-	int i = 0, count = 0, numb;
-	int my_arr[10];
-	char x[1];
+	int n, div, len;
+	unsigned int num;
 
-	numb = va_arg(args, int);
-
-	while (numb != 0)
+	n  = va_arg(args, int);
+	div = 1;
+	len = 0;
+	if (n < 0)
 	{
-		my_arr[i] = (numb % 10);
-		numb = numb / 10;
-		if (numb == 0)
-		{
-			break;
-		}
+		len += _write_char('-');
+		num = n * -1;
 	}
-	while (i >= 0)
+	else
+		num = n;
+	for (; num / div > 9; )
+		div *= 10;
+	for (; div != 0; )
 	{
-		x[0] = ('0' + my_arr[i]);
-		count += write(1, x, 1);
-		i--;
+		len += _write_char('0' + num / div);
+		num %= div;
+		div /= 10;
 	}
-	return (count);
+	return (len);
 }
-
