@@ -15,7 +15,7 @@ int (*check_specifier(const char *format))(va_list)
 		{"%", print_cent},
 		{"d", print_dec},
 		{"i", print_int},
-		{"b", print_binary}
+		{"b", print_binary},
 		{NULL, NULL}};
 	for (i = 0; my_array[i].t != NULL; i++)
 	{
