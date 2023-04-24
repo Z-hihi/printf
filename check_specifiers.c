@@ -9,12 +9,13 @@ int (*check_specifier(const char *format))(va_list)
 {
 	int i;
 
-	func_t my_array[6] = {
+	func_t my_array[7] = {
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_cent},
 		{"d", print_dec},
 		{"i", print_int},
+		{"b", print_binary}
 		{NULL, NULL}};
 	for (i = 0; my_array[i].t != NULL; i++)
 	{
