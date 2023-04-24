@@ -30,10 +30,5 @@ int print_binary(va_list list);
 void write_base(char *str);
 unsigned int base_len(unsigned int num, int base);
 char *_memcpy(char *dest, char *src, unsigned int n);
-<<<<<<< HEAD
-
-=======
 char *rev_string(char *s);
->>>>>>> b7747881781597e61b5aa844451cf62d4a90946d
-
 #endif
