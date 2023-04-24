@@ -28,5 +28,6 @@ int print_dec(va_list);
 int _write_char(char c);
 int print_binary(va_list list);
 void write_base(char *str);
+unsigned int base_len(unsigned int num, int base);
 
 #endif
