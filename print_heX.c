@@ -7,7 +7,7 @@
  */
 int print_heX(va_list list)
 {
-	unsigned num i;
+	unsigned num;
 	int len, rem_num;
 	char *hex_rep, *rev_hex;
 

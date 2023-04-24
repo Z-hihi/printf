@@ -9,7 +9,7 @@ int (*check_specifier(const char *format))(va_list)
 {
 	int i;
 
-	func_t my_array[7] = {
+	func_t my_array[] = {
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_cent},
